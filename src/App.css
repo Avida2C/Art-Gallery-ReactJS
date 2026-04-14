@@ -56,24 +56,22 @@ h6 {
   height: 150em;
 }
 
-.main-img-section img {
+.main-img-section .gallery-main-image {
   height: 41.5em;
   object-fit: cover;
 }
 
-/* Thumbnails */
-.img-thumbnail {
+/* Thumbnails: use full-res src scaled down in CSS so previews stay sharp */
+.main-img-section .img-thumbnail {
   width: 10em;
-  height: 9.5em !important;
-}
-
-.img-thumbnail img {
-  object-position: center;
+  height: 9.5em;
   object-fit: cover;
+  object-position: center;
+  cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
-.img-thumbnail:hover {
+.main-img-section .img-thumbnail:hover {
   transform: scale(1.05);
 }
 

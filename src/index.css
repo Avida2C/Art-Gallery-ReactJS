@@ -6,6 +6,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Discourage saving images via drag / image ghost (works with App.js handlers) */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -22,7 +22,7 @@ export default function Gallery() {
       <div className="row d-flex main-img-section">
         {/* Main Image */}
         <div className="col-6 text-center">
-          <img className="img-fluid pt-2" src={mainImage} alt="Main Display" />
+          <img className="img-fluid pt-2 gallery-main-image" src={mainImage} alt="Main Display" />
         </div>
 
         {/* Thumbnails with Pagination */}
@@ -32,9 +32,11 @@ export default function Gallery() {
               <div key={index} className="col-3 py-2">
                 <img
                   className="img-thumbnail"
-                  src={img.thumb} // Load small thumbnail first
+                  src={img.full}
                   alt={`Thumbnail ${index}`}
-                  onClick={() => setMainImage(img.full)} // Load full image only when clicked
+                  loading="lazy"
+                  decoding="async"
+                  onClick={() => setMainImage(img.full)}
                 />
               </div>
             ))}
