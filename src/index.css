@@ -1,7 +1,11 @@
+:root {
+  --font-body: "Exo 2", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Audiowide", cursive;
+}
+
 body {
   margin: 0;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

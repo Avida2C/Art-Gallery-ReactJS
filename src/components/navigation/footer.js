@@ -41,7 +41,7 @@ export default function Footer() {
                 <hr className="footer-divider" />
 
                 {/* Copyright Text */}
-                <p className="footer-text text-center">
+                <p className="footer-text">
                     © 2025 Avida2C. All Rights Reserved. Designed & Built by Avida2C |
                     Powered by Creativity
                 </p>

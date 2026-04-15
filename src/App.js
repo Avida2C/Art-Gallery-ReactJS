@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/gallery/Gallery";
 import About from "./components/About";
 import Privacy from "./components/privacy";
 import Terms from "./components/terms";
@@ -36,7 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Gallery />} />
         <Route path="/about" element={<About />} />
-        <Route path="/terms" element={< Terms />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
 
